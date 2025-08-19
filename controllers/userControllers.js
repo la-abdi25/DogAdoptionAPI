@@ -67,7 +67,7 @@ const login_user_post = async (req, res) => {
   }
 
   if (!username || !password) {
-    return res.json({ errors });
+    return res.status(400).json({ errors });
   }
 
   try {

@@ -1,6 +1,6 @@
 //import mongoose to connect to db
-const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const mongoose = require("mongoose");
 const connectToDB = async () => {
   if (process.env.NODE_ENV === "test") {
     dotenv.config({ path: ".env.test" });
