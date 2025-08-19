@@ -16,12 +16,6 @@ const dotenv = require("dotenv").config();
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
-const mongoose = require("mongoose");
-
-mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => console.log("MongoDB connected successfully"))
-  .catch((err) => console.error("MongoDB connection error:", err));
 //db connection
 connectToDB();
 
