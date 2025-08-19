@@ -49,7 +49,7 @@ const register_user_post = async (req, res) => {
   } catch (err) {
     //Could not create user
     const errors = handleErrors(err);
-    return res.status(400).json({ errors });
+    return res.status(400).json({ message: "POST received", data: req.body });
   }
 };
 
