@@ -41,7 +41,7 @@ const handleErrors = (err) => {
 // Passwords should be hashed before storing in the database.
 const register_user_post = async (req, res) => {
   try {
-    const { username, password } = req.body;
+    const { username, password } = req.body || {};
     await User.create({ username, password });
     return res
       .status(201)
