@@ -5,7 +5,6 @@ const connectToDB = require("./db");
 //import cors to enable resource sharing
 const cors = require("cors");
 const app = express();
-app.use(cors({ origin: "*" }));
 //user, dog, and messages routes
 const userRoutes = require("./routes/userRoutes");
 const dogRoutes = require("./routes/dogRoutes");
@@ -21,6 +20,13 @@ app.use(cookieParser());
 connectToDB();
 
 //middlewares
+app.use(
+  cors({
+    origin: "*", // allow any domain
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json());
 app.use(userRoutes);
 app.use(dogRoutes);
