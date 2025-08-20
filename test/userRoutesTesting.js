@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 //connect to database before each test
 beforeEach(async function () {
   if (mongoose.connection.readyState === 0) {
-    await mongoose.connect(process.env.TEST_MONGODB_URI);
+    await mongoose.connect(process.env.MONGODB_URI);
   }
 });
 //disconnect from database after each test
@@ -52,14 +52,12 @@ describe("Routes for users", () => {
     });
     it("should return user registered successfully", async () => {
       const res = await request(app).post("/register").send({
-        username: "honeycake",
+        username: "hellotim",
         password: "test1234",
       });
 
       expect(res.status).to.equal(201);
-      expect(res.body.msg).to.equal(
-        `Successfully registered user id honeycake`
-      );
+      expect(res.body.msg).to.equal(`Successfully registered user id hellotim`);
     });
 
     it("duplicate username registered with", async () => {
