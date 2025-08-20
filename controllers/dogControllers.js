@@ -39,7 +39,10 @@ const register_alldogs_get = async (req, res) => {
                 .limit(registeredDogsPerPage);
               return res.status(200).json({ AllRegisteredDogs });
             } else {
-              const AllRegisteredDogs = await RegisteredDog.find({});
+              const AllRegisteredDogs = await RegisteredDog.find(
+                {},
+                { _id: 1, name: 1, description: 1, adopted: 1 }
+              );
               return res.status(200).json({ AllRegisteredDogs });
             }
           } else {
