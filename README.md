@@ -99,7 +99,7 @@
   <li>cd DogAdoptionAPI</li>
   <li>npm install</li>
   <li>create a .env file, follow .env.example file</li>
-  <li>run nodemon app in your terminal via an IDE</li>
+  <li>run: nodemon app, in your terminal via an IDE</li>
   <li>Visit Postman and test the endpoints via http://localhost:3000</li>
   <li>To test the API run: npm run test</li>
 </ol>
@@ -112,4 +112,52 @@
 </ul>
 
 <h2>All Endpoints for API</h2>
-<li></li>
+<ul>
+  <h4>Authentication(Register/Login/Logout)</h4>
+  <li>Method: "POST" - https://dogadoptionapi.onrender.com/register</li>
+  <li>Method: "POST" - https://dogadoptionapi.onrender.com/login</li>
+  <li>Method: "GET" - https://dogadoptionapi.onrender.com/logout</li>
+</ul>
+<ul>
+  <h4>Getting All registered dogs on the platform</h4>
+  <li>Method: "GET" - https://dogadoptionapi.onrender.com/registereddogs/getalldogs</li>
+  <li>Authorization required</li>
+</ul>
+<ul>
+  <h4>Getting your registered dogs on the platform</h4>
+  <li>Method: "GET" - https://dogadoptionapi.onrender.com/registereddogs/getmydogs</li>
+  <li>Authorization required</li>
+</ul>
+<ul>
+  <h4>Getting your adopted dogs on the platform</h4>
+  <li>Method: "GET" - https://dogadoptionapi.onrender.com/adopteddogs/getmydogs</li>
+  <li>Authorization required</li>
+</ul>
+<ul>
+  <h4>Adopt a dog on the platform</h4>
+  <li>Method: "PUT" - https://dogadoptionapi.onrender.com/adoptdog</li>
+  <li>Authorization required</li>
+</ul>
+<ul>
+  <h4>Register your dog for adoption</h4>
+  <li>Method: "POST" - https://dogadoptionapi.onrender.com/registermydog</li>
+  <li>Authorization required</li>
+</ul>
+<ul>
+  <h4>Delete your dog from the platform</h4>
+  <li>Method: "DELETE" - https://dogadoptionapi.onrender.com/deletemydog</li>
+  <li>Authorization required</li>
+</ul>
+<ul>
+  <h4>Viewing messages you sent as a user </h4>
+  <li>Method: "GET" - https://dogadoptionapi.onrender.com/sentmessages</li>
+  <li>Authorization required</li>
+</ul>
+<ul>
+  <h4>Viewing messages you recieved as a user </h4>
+  <li>Method: "GET" - https://dogadoptionapi.onrender.com/recmessages</li>
+  <li>Authorization required</li>
+</ul>
+
+
+
