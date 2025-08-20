@@ -113,6 +113,10 @@
 
 <h2>All Endpoints for API</h2>
 <ul>
+  <h4>Welcome to the Dog Adoption API</h4>
+  <li>Method: "GET" - https://dogadoptionapi.onrender.com/</li>
+</ul>
+<ul>
   <h4>Authentication(Register/Login/Logout)</h4>
   <li>Method: "POST" - https://dogadoptionapi.onrender.com/register</li>
   <li>Method: "POST" - https://dogadoptionapi.onrender.com/login</li>
