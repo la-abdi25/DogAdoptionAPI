@@ -1,4 +1,4 @@
-# DogAdoptionAPI
+# Dog Adoption API
 
 <h2>Description</h2>
 <p>A RESTful API for managing dog adoptions, where users can register, login, register their dogs for adoption, adopt dogs, and manage their registered or adopted dogs using Node.js, Express.js, and MongoDB.</p>
