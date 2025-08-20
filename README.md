@@ -98,7 +98,7 @@
   <li>git clone https://github.com/la-abdi25/DogAdoptionAPI.git</li>
   <li>cd DogAdoptionAPI</li>
   <li>npm install</li>
-  <li>create a .env file, follow .env.example file</li>
+  <li>create a .env and .env.test files, follow .env.example file in the codebase</li>
   <li>run: nodemon app, in your terminal via an IDE</li>
   <li>Visit Postman and test the endpoints via http://localhost:3000</li>
   <li>To test the API run: npm run test</li>
