@@ -82,7 +82,7 @@
     <li>bcrypt for password hashing</li>
   </ul>
   <ul>
-    <h4>Environment Variables:</h4>h4>
+    <h4>Environment Variables:</h4>
     <li>dotenv</li>
   </ul>
   <ul>
