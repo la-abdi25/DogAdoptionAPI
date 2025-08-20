@@ -68,25 +68,25 @@
 <h2>Tech Stack</h2>
 <ul>
   <ul>
-    BackEnd:
+    <h4>BackEnd:</h4>
     <li>Node.js</li>
     <li>Express.js</li>
   </ul>
    <ul>
-    Database:
+    <h4>Database:</h4>
     <li>MongoDB (Mongoose ODM)</li>
   </ul>
   <ul>
-    Authentication:
+    <h4>Authentication:</h4>
     <li>JWT (JSON Web Tokens)</li>
     <li>bcrypt for password hashing</li>
   </ul>
   <ul>
-    Environment Variables:
+    <h4>Environment Variables:</h4>h4>
     <li>dotenv</li>
   </ul>
   <ul>
-    Automated tests:
+    <h4>Automated tests:</h4>
     <li>Mocha: JavaScript test framework</li>
     <li>Chai: Assertion library</li>
     <li>Supertest: HTTP assertions for API endpoints</li>
@@ -99,6 +99,7 @@
   <li>cd DogAdoptionAPI</li>
   <li>npm install</li>
   <li>create a .env file, follow .env.example file</li>
+  <li>run nodemon app in your terminal via an IDE</li>
   <li>Visit Postman and test the endpoints via http://localhost:3000</li>
   <li>To test the API run: npm run test</li>
 </ol>
